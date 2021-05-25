@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      ユーザビリティテストのタスクシート - taninnosorani blog
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           taninnosorani blog
+				
+			</a>
+		</h1>
+		<h2 class="blog-description">What is the UX Workflow?</h2>
+	</div>
+
+	<div class="nav">
+    
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      
+      <h2 class="post-title">ユーザビリティテストのタスクシート</h2>
+      <section class="post-meta">
+        <time class="post-date">2014-02-01</time>
+      </section>
+    </header>
+    <section class="post-content">
+      <p>ユーザビリティテストの進行やユーザーの行動などを記録するタスクシート（プロトコルのようなメモや議事録の雛形）を作成しました。</p>
+<p>ただユーザビリティテストを専門で行っているわけではないので、要素の抜け漏れなどはあるかもしれません。ユーザビリティのテストプラン作成やレポート作成、被験者のリクルーティングなどは参考情報をご参照下さい。<strong>ここではユーザビリティテスト全体ではなく、インタビュー中に使用するタスクシート（インタビューシート）に関してになります</strong>。</p>
+<h3 id="ver2の変更箇所">ver2の変更箇所</h3>
+<p><a href="https://docs.google.com/spreadsheets/d/1kfyauniAyNH4JGfQcsAikfiDOcdknOMEs-SDcZEL7qk/pubhtml?gid=1818846745&amp;amp;single=true&amp;amp;widget=true&amp;amp;headers=false">https://docs.google.com/spreadsheets/d/1kfyauniAyNH4JGfQcsAikfiDOcdknOMEs-SDcZEL7qk/pubhtml?gid=1818846745&amp;amp;single=true&amp;amp;widget=true&amp;amp;headers=false</a></p>
+<ul>
+<li>ver1ではフェイズ毎に別の列を記載していましたが、ver2では全て共通の列名を使用しています。列名がバラバラであったためスプレッドシートにしては複雑なレイアウトなっていました。今は列行は１つなので固定行にしてスクロール時にも見やすくなりました。</li>
+<li>経過時刻を記載する列を追加しました。進行管理を行うときに遅れているのか進んでいるかのをすぐに把握するためです。</li>
+<li>テストからの気付きを記載する「テスト結果の感想」列と、タスクを実施するための準備を記載する「準備・メモ」列を分けました。</li>
+<li>達成や効率などの評価ポイントを自動で計算するようにしました。ちなみにこのポイントは数字が多いほどユーザーが躓いたことを表します。</li>
+<li>13inchのMacBookでなるべく収まるように全体的に幅を短くしました。</li>
+</ul>
+<p>（参考：ver1)</p>
+<p><a href="https://docs.google.com/spreadsheet/pub?key=0ApZE_qOGDfNHdEYySkRNOGRBR0U0N2s3T2U0azJwelE&amp;single=true&amp;gid=0&amp;output=html&amp;widget=true">https://docs.google.com/spreadsheet/pub?key=0ApZE_qOGDfNHdEYySkRNOGRBR0U0N2s3T2U0azJwelE&amp;single=true&amp;gid=0&amp;output=html&amp;widget=true</a></p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="各ステップ-ユーザビリティテストの構成">各ステップ ~ユーザビリティテストの構成~</h3>
+<h4 id="1アンケート">1.アンケート</h4>
+<p>リクルーティング時に被験者のリテラシーを全て把握していれば必要はありませんが、社内などの身近な方を対照するディスカウントユーザビリティテストなどではデモグラフィックのデータが揃っていないことが多いので、ここでセグメントを分類するためにアンケートを記載していただきます。このアンケートの目的はテストするサービスにどれだけ接点があるかです。<strong>利用頻度</strong>や<strong>サービスをどの程度まで理解</strong>されているかで、その後のテストの進め方にも影響します（例えば、実はハードユーザーであったのなら初心者向けタスクはスキップするなど）。もちろん外部や専門部署へリクルーティングを依頼する場合には、前もって設定したリテラシー範囲を挙げる必要があります。</p>
+<h4 id="2テスト前のお願い">2.テスト前のお願い</h4>
+<p>アンケートの後には、思ったことをそのまま口に出してもらう思考発話法の実践していただくようにお願いをします。ただし、ユーザビリティテストに慣れていない方にこのお願いをしても、すぐにはうまくいきません。そのためテストの最中に考えていること聞いて話を促しますので、<strong>わざわざ発話法に触れなくても良いと思います</strong>。そもそも発話法に慣れている方というのは被験者としてはあまり参考にならないかもしれません。他には被験者を評価しているわけではないことや、テスト中に質問されてもヒントになってしまう場合は答えられないことを伝えることが推奨されますが、儀式なようなものなのでアンケート後はすぐに状況説明をして良いと思います。</p>
+<h4 id="3状況説明">3.状況説明</h4>
+<p>いきなりプロトタイプ（スマフォやPC、またはペーパープロトなど）を渡すのではなく、感情移入しやすいようにテスト前の状況の経緯を伝えます。例えば、Webサイトのテストなら対象のサイトが表示された端末を渡すのではなく、「<strong>あなたはXXXが気になったので、GoogleでAと検索して、一番上に表示されたBというサイトをタップしました</strong>」と伝えてから始めます。こうすることで被験者がより自分の実体験に置き換えて実際の行動に近づけやすくなります。この状況はUXプロセスのストーリーで設計したシナリオを当てはめます。考えたシナリオは状況説明だけではなく、この後に行うテストにもシナリオがベースとなります。</p>
+<h4 id="4テストの実施">4.テストの実施</h4>
+<p>テストのタスク内容もシナリオを流用します。ユーザビリティテストの実施を見越してシナリオの元になるプロット（<a href="http://taninno.github.io/blog/2013/05/16/my-ux-design-approach/">http://taninno.github.io/blog/2013/05/16/my-ux-design-approach/</a>）を作成しておくと良いかと思います。<strong>このようなユーザーのタッチポイントや操作順序、時間経過をまとめたプロット</strong>があればタスクシートの作成も簡単になります。</p>
+<h4 id="5質問回顧法">5.質問（回顧法）</h4>
+<p>テスト中に思った疑問を聞きます。インタビューアーの方ならテスト中でも「どうしてXXXを選択したんですか？」など聞きやすいですが、メモをとっていた人や別室でウォッチしている人は疑問をまとめて後で質問します。インタビューアーの方でもFive-Whysなどでコアな理由・原因を知りたいときにテスト後の時間を利用すれば、時間超過やタスクのヒントを言ってしまうことも防げます。また、サービスの全体的な印象を聞いたり、100満点で点数をつけてもらうときもここで行います。あとは逆に被験者からの質問・もやもやしていることを聞いたりします。</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="タスクシートの項目についてver1">タスクシートの項目について（ver1）</h3>
+<p>下記の表の各列を左から説明します。</p>
+<h4 id="タスク">タスク</h4>
+<p>タスクの項番です。</p>
+<h4 id="目安">目安</h4>
+<p>個々のタスクにかかる時間を記載します。ここでは分単位にしています。被験者によって大きくことなるので目安として設けています。</p>
+<h4 id="優先度">優先度</h4>
+<p>時間が足りなくなってきた際に、どのタスクをスキップすればいいのかを判断するために記載します。</p>
+<h4 id="発言">発言</h4>
+<p>インタビューアーが被験者に質問する発言内容です。慌てても大丈夫なように台本のような見本となるセリフを記載します。ただし棒読みしてしまわないように自分なりの言葉に言い換えたほうが良いと思います。</p>
+<h5 id="補足インタビュー中のポイント">補足：インタビュー中のポイント</h5>
+<ol>
+<li>ユーザーが「～できるんですか？」と聞いてきたら「どう思います？」と逆に聞き返す。</li>
+<li>ユーザーが思考発話でひとりごとを発している時には、「そうなんですね」とオウム返しをしてあげる。</li>
+<li>ユーザーが少し戸惑っていたら、「どうしました？」と聞く。</li>
+<li>ユーザーが操作を中断してしばらく経ったら、「～あたりに何かないですか？」とヒントを伝える。</li>
+</ol>
+<h4 id="ポイント">ポイント</h4>
+<p>当該タスクの目的を記載します。テストで確認したい箇所や着眼すべき箇所がどこなのかをハッキリさせます。</p>
+<h4 id="想定する行動">想定する行動</h4>
+<p>被験者の操作手順が最もベストだと思える操作を記載します。ここに記載する流れは既にシナリオで作成した内容になります。個人的にはユーザビリティテストで大切なことは個々のタスクの流れがシナリオ通りに進めているかを見つけ出すものだと考えています。</p>
+<h4 id="実際の行動">実際の行動</h4>
+<p>被験者がどのような操作や発言をしたのかを記載します。</p>
+<h4 id="メモ">メモ</h4>
+<p>記載者が個人的に気付いたことを記載します。被験者の発言からの発見やテストの改善など気になったことをメモする欄です。</p>
+<h4 id="達成効果effctiveness">達成（効果/effctiveness）</h4>
+<ul>
+<li>◯はタスクを完了した場合</li>
+<li>△はインタビューアーのヒントを得てタスクを完了した場合</li>
+<li>☓はタスクを完了で来なかった場合</li>
+</ul>
+<h4 id="効率efficiency">効率（efficiency）</h4>
+<ul>
+<li>◯は想定の操作通りにできた場合</li>
+<li>△は多少迷っていた場合</li>
+<li>☓は目安時間を超過した場合</li>
+</ul>
+<h4 id="満足satisfaction">満足（satisfaction）</h4>
+<ul>
+<li>◯は被験者が特に不満を持っていないと思われた場合</li>
+<li>△は不満を持っていそうだと思われた場合</li>
+<li>☓は不満を露わにしていた場合</li>
+</ul>
+<h4 id="評価インパクト分析">評価（インパクト分析）</h4>
+<p>達成・効率・満足を数値化してどの操作（タスク）が問題となっていたかを把握します。数値は一般的な優先順位付けではなく、重要度を測りやすくするため、数値が多いほど問題が大きくなるようにします。係数は以下の表の通りです。タスクが正常に完了すれば<strong>0</strong>、最も深刻な問題は<strong>12</strong>となります。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&mdash;-</th>
+<th style="text-align:center">達成</th>
+<th style="text-align:center">　効率</th>
+<th style="text-align:center">　満足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">◯</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">△</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">☓</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">3</td>
+</tr>
+</tbody>
+</table>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="参考情報">参考情報</h3>
+<h4 id="url">URL</h4>
+<ul>
+<li><a href="http://www.usability.gr.jp/">http://www.usability.gr.jp/</a></li>
+<li><a href="http://www.usability.gr.jp/tag/usability-test/">http://www.usability.gr.jp/tag/usability-test/</a></li>
+<li><a href="http://www.usability.gr.jp/whatis/standards/">http://www.usability.gr.jp/whatis/standards/</a></li>
+<li><a href="http://www.usability.gov/">http://www.usability.gov/</a></li>
+<li><a href="http://www.nngroup.com/reports/mobile-website-and-application-usability/">http://www.nngroup.com/reports/mobile-website-and-application-usability/</a></li>
+<li><a href="http://www.nngroup.com/articles/ten-usability-heuristics/">http://www.nngroup.com/articles/ten-usability-heuristics/</a></li>
+<li><a href="http://www.nngroup.com/articles/affordable_care_act_usability_issues/">http://www.nngroup.com/articles/affordable_care_act_usability_issues/</a></li>
+<li><a href="http://ja.wikipedia.org/wiki/ISO_9126">http://ja.wikipedia.org/wiki/ISO_9126</a></li>
+<li><a href="http://www.iid.co.jp/">http://www.iid.co.jp/</a></li>
+<li><a href="http://directorblog.jp/archives/51780644.html">http://directorblog.jp/archives/51780644.html</a></li>
+<li><a href="http://gigazine.net/news/20120830-ui-design-cedec2012/">http://gigazine.net/news/20120830-ui-design-cedec2012/</a></li>
+<li><a href="http://www.coprosystem.co.jp/marketingblog/2012/01/24.html">http://www.coprosystem.co.jp/marketingblog/2012/01/24.html</a></li>
+<li><a href="http://d.hatena.ne.jp/absj31/20120310/1331399198">http://d.hatena.ne.jp/absj31/20120310/1331399198</a></li>
+<li><a href="http://www.userside.jp/evaluation/usability-test/index.html">http://www.userside.jp/evaluation/usability-test/index.html</a></li>
+<li><a href="http://www.mitsue.co.jp/service/usability/web_usability_testing/">http://www.mitsue.co.jp/service/usability/web_usability_testing/</a></li>
+</ul>
+<h4 id="書籍">書籍</h4>
+<ul>
+<li><a href="http://www.amazon.co.jp/gp/product/4798112941/ref=as_li_ss_tl?ie=UTF8&amp;camp=247&amp;creative=7399&amp;creativeASIN=4798112941&amp;linkCode=as2&amp;tag=copy-22">ユーザ・エクスペリエンス ユーザ・リサーチ実践ガイド(IT Architects' Archive ソフトウェア開発の課題9</a></li>
+<li><a href="http://www.amazon.co.jp/gp/product/4274201449/ref=as_li_ss_tl?ie=UTF8&amp;camp=247&amp;creative=7399&amp;creativeASIN=4274201449&amp;linkCode=as2&amp;tag=copy-22">ユーザビリティエンジニアリング―ユーザ調査とユーザビリティ評価実践テクニック</a></li>
+<li><a href="http://www.amazon.co.jp/gp/product/4797339098/ref=as_li_ss_tl?ie=UTF8&amp;camp=247&amp;creative=7399&amp;creativeASIN=4797339098&amp;linkCode=as2&amp;tag=copy-22">ウェブユーザビリティの法則 改訂第2版</a></li>
+<li><a href="http://www.amazon.co.jp/gp/product/4822296105/ref=as_li_ss_tl?ie=UTF8&amp;camp=247&amp;creative=7399&amp;creativeASIN=4822296105&amp;linkCode=as2&amp;tag=copy-22">UXデザイン入門</a></li>
+<li><a href="http://www.amazon.co.jp/gp/product/4839922330/ref=as_li_ss_tl?ie=UTF8&amp;camp=247&amp;creative=7399&amp;creativeASIN=4839922330&amp;linkCode=as2&amp;tag=copy-22">Webサイト設計のためのデザイン&amp;プランニング~ドキュメントコミュニケーションの教科書~ (Web Designing Books)</a></li>
+</ul>
+    </section>
+    <footer class="post-footer">
+      
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  
+  <section class="facebook"><a class="icon-facebook" href="https://www.facebook.com/https://www.facebook.com/yamada.kousuke"> https://www.facebook.com/yamada.kousuke</a></section>
+  <section class="copyright">&copy; 2021 taninnosorani blog</section>
+  <section class="poweredby"><a href="https://github.com/nirocfz/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+    </body>
+</html>

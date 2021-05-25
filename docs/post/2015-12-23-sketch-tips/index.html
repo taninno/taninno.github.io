@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      freeeでのSketch運用の実態 - taninnosorani blog
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           taninnosorani blog
+				
+			</a>
+		</h1>
+		<h2 class="blog-description">What is the UX Workflow?</h2>
+	</div>
+
+	<div class="nav">
+    
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      
+      <h2 class="post-title">freeeでのSketch運用の実態</h2>
+      <section class="post-meta">
+        <time class="post-date">2015-12-23</time>
+      </section>
+    </header>
+    <section class="post-content">
+      <p>この記事は<a href="http://qiita.com/advent-calendar/2015/sketch3">Sketch 3 Advent Calendar 2015</a> の 23日目のエントリーになります。</p>
+<p>10月頃にfreeeの社内でSketchの勉強会を開催しました。その勉強会の感想で「社内事例を聞いてみたい」「外部サービスとの連携した際のモックアップ検証方法」「山田さんのSketch芸を見てみたい」という声を頂いため、ブログという形でtipsを添えた社内事例をご紹介したいと思います。あとfreeeでは企業カテゴリで<a href="http://qiita.com/advent-calendar/2015/freee">freee Engineers Advent Calendar 2015</a>に参加しています。エンジニア向けの記事が多いですが、とても面白いので宜しければこちらもご一読下さい。</p>
+<p><img src="/images/sketch/01.png" alt=""></p>
+<p><em>Sketchの基本的な操作方法はここでは省略させていただきます。Sketchに興味がある方は上記のSketchのAdventCalendarがとても参考になります。</em></p>
+<h3 id="その前に">その前に</h3>
+<p>早速、画面デザインを実際の流れに沿って紹介をしていきたいと思います。ちなみに画面設計に入る前にDesignDocという課題の整理を行います。これはデザイナーに限らずfreeeのプロダクト開発をする全員が必ず行います。そもそもこの課題は何が問題なのか、その課題に取り組む背景とはなにか、その課題がクリアされたとする状態とはなにかなど、これから取り組む施策を明確にし、1ヶ月後の振り返りの際にどの程度達成されているか検証します。</p>
+<p>課題が整理されたとして、それではSketchを起動させましょう。</p>
+<h3 id="ファイルの管理方法">ファイルの管理方法</h3>
+<p>まず最初は地味ですがファイルの管理方法に関してです。Photoshopでは基本的には1ファイルに1画面だったため、ファイル名に施策や画面名を名付けていましたが、SketchにはPages機能があるためこれを利用します。Fireworksのページに似た機能なので、これを使ってプロジェクト毎の管理もSketchで行います。<br>
+<img src="/images/sketch/02.png" alt=""><br>
+1つのPageのキャンバスには複数のArtboardを配置できるので、LPなどの単ページだけではなく、例えば複数の画面に跨ぐチュートリアル画面やモバイルアプリのCRUD系の画面も1つのPageとして管理します。</p>
+<p>Pagesの説明が長くなってしまいましたが、これによって基本的には1個のSketchファイルを管理するだけで済みます。ただ、あるSketchファイルは30pages以上もあるのですが、page数が増えるとそれだけファイルサイズが増えるので、freeeのプロダクト別にSketchファイルを分けています。<br>
+<img src="/images/sketch/03.png" alt=""></p>
+<h3 id="artboardの配置ルール">Artboardの配置ルール</h3>
+<p>Sketchファイルとpageが用意できたので、次にArtboardを使って画面を作成していきます。Artboardはキャンバス内のどこにでも配置できますが、以下の簡単な配置ルールを設けています。ルールと言っても気にしているレベルですが…</p>
+<ul>
+<li><strong>複数画面になる場合は下に遷移先の画面を配置する</strong>。つまり下側に遷移先の画面が連なっていくことになります。モバイルの時もだいたい同じです。</li>
+<li><strong>当該画面の右際には別ステートのAartboardを配置する</strong>。hover状態やバルーン系の別レイヤーを表示させた状態の専用Artboardになります。</li>
+<li><strong>参考画面をステートArtboardのさらに右側に配置する</strong>。例えば既存画面や参考にしたいデザインなどをArtboardは用いずキャンバス上に配置します。多い時には20画面ぐらい横に並びます。</li>
+<li><strong>古いバージョンの画面を左側に配置する</strong>。個人的に前に作ったものを参照したくなることが多いので、捨てずに隣に置いておくようにしています。</li>
+</ul>
+<p><img src="/images/sketch/04.png" alt=""></p>
+<p>参考画面や前versionは比較やすいように左右に配置することが多いことから自然とこのような配置になっています。</p>
+<h3 id="ui-component">UI Component</h3>
+<p>Component系は<a href="http://www.sketchappsources.com/">Sketch App Resources</a>から公開されているSketchファイルを利用します。<br>
+<img src="/images/sketch/05.png" alt=""></p>
+<p><a href="http://www.sketchappsources.com/search.html?q=yosemite">YosemiteUIのステンシル</a>もありますのでセレクトボックスやラジオボタンなどの外観のUIも簡単に用意することができます。<br>
+<img src="/images/sketch/06.png" alt=""></p>
+<h3 id="zeplin">zeplin</h3>
+<p>以前の<a href="http://localhost:4000/blog/2015/07/20/how-about-zeplin/">記事</a>でもご紹介しましたが、去年から<a href="https://zeplin.io/">zeplin</a>を使用しています。zeplin自体の詳細はそちらを参照していただくとして、zeplinの連携に関してご紹介します。</p>
+<h4 id="チャットツールとの連携">チャットツールとの連携</h4>
+<p>チャットツールの<a href="https://slack.com/">slack</a>とzeplinを連携することができます。例えば新しい画面をzeplinにアップロードするとslack上で画面のサムネイルを表示してくれます。他には招待した人が参加した時やzeplin上でコメントを記入した際も通知してくれます。<br>
+<img src="/images/sketch/07.png" alt=""></p>
+<h4 id="外部パートナーさんとの連携">外部パートナーさんとの連携</h4>
+<p>プロダクト以外のLPなどの制作は外部のパートナーさんに実装をお願いする場合もあります。その際に社内で作成したデザインを共有する際にzeplinを利用しています。zeplinはコメント機能があるので「ここのパーツが足りないですよ」「すみません！すぐに用意します」といったパートナーさんへの謝罪のやりとりもzeplinで行っています。ちなみにコメントはslackにも通知されるので返信し忘れも防ぎやすくなります。
+<img src="/images/sketch/08.png" alt=""></p>
+<h3 id="モックアップ連携">モックアップ連携</h3>
+<p><a href="http://www.invisionapp.com/">inVsion</a>, <a href="https://marvelapp.com/">marvel</a>などのモックアップサービスと連携しています。</p>
+<h3 id="最後に">最後に</h3>
+<p>以上、細かな話になりましたがSketchの運用Tipsになります。ちなみにSketchは便利なツールですが、いつもSketchを使っているわけではなく、画面の一部分のレイアウトをちょっと変えるくらいなら紙とペンで終わらせ、画面遷移が連続して20回くらい以上あるなら<a href="http://taninno.github.io/blog/2013/09/12/justinmind-prototyper/">justinmindでモックアップ検証</a>を先に着手するようにプロジェクトの規模ごとにツールを選定しています。</p>
+<h3 id="25日のadventcalendarは">25日のAdventCalendarは</h3>
+<p>明日は不在ですが、明後日は<a href="http://qiita.com/lysaco">lysaco</a>さんの「silver（ <a href="http://silverflows.com/">http://silverflows.com/</a> ）について書きます（仮）」です。お楽しみに！</p>
+    </section>
+    <footer class="post-footer">
+      
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  
+  <section class="facebook"><a class="icon-facebook" href="https://www.facebook.com/https://www.facebook.com/yamada.kousuke"> https://www.facebook.com/yamada.kousuke</a></section>
+  <section class="copyright">&copy; 2021 taninnosorani blog</section>
+  <section class="poweredby"><a href="https://github.com/nirocfz/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+    </body>
+</html>

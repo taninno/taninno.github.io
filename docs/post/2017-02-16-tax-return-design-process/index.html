@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      確定申告のデザインプロセス - taninnosorani blog
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           taninnosorani blog
+				
+			</a>
+		</h1>
+		<h2 class="blog-description">What is the UX Workflow?</h2>
+	</div>
+
+	<div class="nav">
+    
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      
+      <h2 class="post-title">確定申告のデザインプロセス</h2>
+      <section class="post-meta">
+        <time class="post-date">2017-02-16</time>
+      </section>
+    </header>
+    <section class="post-content">
+      <p>昨年度、会計freeeの確定申告のUIを<a href="https://corp.freee.co.jp/news/tax-return-new-ui-4685.html">リニューアル</a>しました。これも<a href="http://taninno.github.io/blog/2013/05/16/my-ux-design-approach/">問題解決型のUXデザインアプローチ</a>で進めたので、プロセスの事例として紹介したいと思います。</p>
+<p><img src="/images/tax_return/step3.png" alt=""></p>
+<p>進め方は以下の通りです。</p>
+<ol>
+<li>理解</li>
+<li>アイディア</li>
+<li>ストーリー</li>
+<li>UI</li>
+<li>ビジュアルデザイン</li>
+<li>開発</li>
+<li>フィードバック</li>
+</ol>
+<h2 id="理解">理解</h2>
+<p>まず問題ですが以前の確定申告書作成機能でも大きな問題はありませんでした。馴染みのある申告書のレイアウト上に入力欄を配置し、ユーザーは額を入力していく直接入力というスタイルで簡単に完了できます。ただ開業して初年度のユーザーはどこに何を入力すればいいのか分からず、確定申告の知識が必要となっていました。これを解決するために確定申告の理解から始めます。</p>
+<p>確定申告を終わらせるだけであればさほど難しくありません。大雑把に言えば１年の収支を記載するだけでほとんどが終わります。ですが確定申告の目的は収支を記入するだけではなく収入から経費と控除を差し引いた所得金額を算出することです。収支の入力が簡単な確定申告ソフトであれば数多くありますが、控除の入力に関しては初めて人には特に難解になっていました。実際、確定申告の自社アンケートでも複数の控除を理解している人はそれほど多くありませんでした。</p>
+<p>難しくさせている１つに様々な控除があります。病院などで掛かった費用に対する医療費控除、最近多いふるさと納税での寄付金控除、家族を養っている場合には配偶者控除や扶養控除など、他にも多くの種類があります。これらの控除は個人事業主の斟酌と公平な税負担のためにあり、控除を申告することで正しい課税にもなります（支払う税金が少ないことにこしたことはないですし）。</p>
+<p>それと確定申告が初めての方が3割以上いることもわかりました。日本の開業率は5%前後を推移しているはずなのでfreeeの利用される方は初めての方が多いともいえますが、初めての方も来年には2年目以降は初心者ではなくなります。だからなのか他社や国税庁でも玄人寄りのUIが多く、freeeもこれまでそうでした。</p>
+<h2 id="アイディア">アイディア</h2>
+<p>１度は確定申告を経験している方が大多数。どこに何を記入すればいいか分かっているので書面を模した慣れた形式のままがよい。そういう考え方もあると思います。ですが私自身フリーランスだった際は税務署の担当の方にお任せで何も知識は身に付かず、会社に属してからも年に１度配られる年末調整の「保険料控除申告書兼給与所得者の配偶者特別控除申告書」のどこに何を記入すればいいのか毎回経理の方に確認しています。（<a href="https://www.freee.co.jp/payroll">給与計算freee</a>なら年末調整も簡単です）</p>
+<p><img src="/images/tax_return/h28_05.png" alt=""></p>
+<p>人は364日何もしていなかったら基本的に忘れるのは仕方ありません（私も年に１回だけスノボに行きますが１日だけだと毎年行ってるのに全然上達しません）。確定申告に詳しい人というのはほとんどいないと考え、プライマリーユーザーを開業1~5年の&quot;初心者&quot;としました。それだと詳しい方も含まれてしまいますが、本業以外に調べたりしなければ数回やっただけで覚えられるほど確定申告は簡単なことではないことと考え割り切りました。</p>
+<p>ペルソナを初心者にすると申告書の提出や納付方法も最初はどうしたらよいの分からないのではないかと思い、初めての方を想定して提出〜納付までの具体的な案内を盛り込みました。多くの確定申告ソフトを見ると作成まで手厚くサポートしてても提出からは「国税庁に記載されている管轄の税務署に行ってください」という簡単な記載のみだったので、ポストに投函できることや場合によってはコンビニで納付できることが分からないのではと思いました。</p>
+<p><img src="/images/tax_return/step5.png" alt=""></p>
+<h2 id="ui">UI</h2>
+<p>そうして方向性が固まると<a href="https://www.freee.co.jp/launch">会社設立freee</a>でも利用した一本道のUIが良いと考えました。ただ一本道と言っても、かえって難しくなることがあります。Taskを並べるだけでは膨大なチェックリストとなってしまいモチベーションも下がってしまうので様々な「ユースケース」を組み込みました。その人に該当するかどうかで入力する必要のあるもの無いものが数多くを振り分けのUIが重要となってきます。そこで例えば「あなたは病院にいきましたか？」と聞いて医療費控除の有無を確認するような安易な言葉で対話して選択しやすくしました。</p>
+<p><img src="/images/tax_return/step2.png" alt=""></p>
+<p>ちなみに一本道の道中に確定申告とは関係ない月々の収支グラフを表示しています。freeeが目指すのはユーザーが本業にフォーカスできることです。ユーザーには確定申告を終えるだけではなく、経営状況も把握してほしいと思っています。税務財務会計だけではなく管理会計として使うことで事業の継続に役立てると考えているからです。そこで確定申告書を作成すると同時に昨年の収支とAIによる支出分析を表示し、日々の経営を見直すキッカケとなったらと考えました。</p>
+<p><img src="/images/tax_return/chart.png" alt=""></p>
+<h2 id="ビジュアルデザイン開発">ビジュアルデザイン/開発</h2>
+<p>確定申告のUIはSketchやPhotoshop、AdobeのXD等は使っていません。画面設計は全て<a href="https://www.justinmind.com/">Justinmind</a>だけで作成しました。これは画面や入力要素が多く入力してから数日かかることもある機能のためサーフェイスより全体の構成とインタラクションを重視したからです（ドローイングツールを使わないのは割と多く<a href="https://www.freee.co.jp/launch">会社設立freee</a>でも利用していません）。プロジェクト後期でもプロトタイプベースでUIをすぐに調整しエンジニアと意思疎通できるようになりました。</p>
+<h2 id="フィードバック">フィードバック</h2>
+<p>リニューアルしてからの最初の2015年度の確定申告ではたくさんのフィードバックをいただきました。ありがとうございます。まだ理想の確定申告には届きませんが、徐々に進化していきます。今年の<a href="https://www.freee.co.jp/kakuteishinkoku">2016年度の確定申告</a>では新しくマイナンバーや電子申告にも対応しました。ご利用頂けたら幸いです。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Uo0YZdtFWPc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+    </section>
+    <footer class="post-footer">
+      
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  
+  <section class="facebook"><a class="icon-facebook" href="https://www.facebook.com/https://www.facebook.com/yamada.kousuke"> https://www.facebook.com/yamada.kousuke</a></section>
+  <section class="copyright">&copy; 2021 taninnosorani blog</section>
+  <section class="poweredby"><a href="https://github.com/nirocfz/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+    </body>
+</html>

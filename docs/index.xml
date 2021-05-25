@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>taninnosorani blog</title>
+    <link>https://taninno.github.io/</link>
+    <description>Recent content on taninnosorani blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 16 Feb 2017 22:41:44 +0900</lastBuildDate><atom:link href="https://taninno.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prototyperを使ったモックアップ主導のUI設計プロセス</title>
+      <link>https://taninno.github.io/post/2013-09-12-justinmind-prototyper/</link>
+      <pubDate>Thu, 12 Sep 2013 23:28:00 +0900</pubDate>
+      
+      <guid>https://taninno.github.io/post/2013-09-12-justinmind-prototyper/</guid>
+      <description>&lt;p&gt;ユーザーインターフェイスを設計するためのワイヤーフレームとモックアップの取捨選択とプロトタイピングに適したモックアップツールを記載しています。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>問題解決型UXデザインアプローチ</title>
+      <link>https://taninno.github.io/post/2013-05-16-my-ux-design-approach/</link>
+      <pubDate>Thu, 16 May 2013 12:43:00 +0900</pubDate>
+      
+      <guid>https://taninno.github.io/post/2013-05-16-my-ux-design-approach/</guid>
+      <description>&lt;p&gt;受託のUXデザインを進めていく中で作業の流れと自分が心掛けていることを記載しています。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Surface 2.0 Design and Interaction Guideline 翻訳</title>
+      <link>https://taninno.github.io/post/2012-08-05-surface-guideline-reading/</link>
+      <pubDate>Sun, 05 Aug 2012 13:50:00 +0900</pubDate>
+      
+      <guid>https://taninno.github.io/post/2012-08-05-surface-guideline-reading/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://taninno.github.io/images/surface/surface.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Surfaceのデザインガイドラインを翻訳しました。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>確定申告のデザインプロセス</title>
+      <link>https://taninno.github.io/post/2017-02-16-tax-return-design-process/</link>
+      <pubDate>Thu, 16 Feb 2017 22:41:44 +0900</pubDate>
+      
+      <guid>https://taninno.github.io/post/2017-02-16-tax-return-design-process/</guid>
+      <description>&lt;p&gt;昨年度、会計freeeの確定申告のUIを&lt;a href=&#34;https://corp.freee.co.jp/news/tax-return-new-ui-4685.html&#34;&gt;リニューアル&lt;/a&gt;しました。これも&lt;a href=&#34;http://taninno.github.io/blog/2013/05/16/my-ux-design-approach/&#34;&gt;問題解決型のUXデザインアプローチ&lt;/a&gt;で進めたので、プロセスの事例として紹介したいと思います。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>デザイナーとエンジニアの協業のためのコラボレーションツール</title>
+      <link>https://taninno.github.io/post/2016-02-13-ui-collaboration-tools/</link>
+      <pubDate>Sat, 13 Feb 2016 19:59:19 +0900</pubDate>
+      
+      <guid>https://taninno.github.io/post/2016-02-13-ui-collaboration-tools/</guid>
+      <description>&lt;p&gt;デザインとコードの担当を分業しているところでは、Photoshopのスライスツールで画像を書き出してExcelにassets一覧シートを作っていたと思います。場合によってはエンジニアがシートに記載してある画像ファイルのフォルダを開いてプロジェクトファイルに移動させたり…とても面倒でした。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>freeeでのSketch運用の実態</title>
+      <link>https://taninno.github.io/post/2015-12-23-sketch-tips/</link>
+      <pubDate>Wed, 23 Dec 2015 15:19:24 +0900</pubDate>
+      
+      <guid>https://taninno.github.io/post/2015-12-23-sketch-tips/</guid>
+      <description>&lt;p&gt;この記事は&lt;a href=&#34;http://qiita.com/advent-calendar/2015/sketch3&#34;&gt;Sketch 3 Advent Calendar 2015&lt;/a&gt; の 23日目のエントリーになります。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>freeeではZeplinを使っています</title>
+      <link>https://taninno.github.io/post/2015-07-20-how-about-zeplin/</link>
+      <pubDate>Mon, 20 Jul 2015 02:56:34 +0900</pubDate>
+      
+      <guid>https://taninno.github.io/post/2015-07-20-how-about-zeplin/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://zeplin.io/&#34;&gt;Zeplin&lt;/a&gt;はドローイングツールの&lt;a href=&#34;http://bohemiancoding.com/sketch/&#34;&gt;Sketch&lt;/a&gt;で作ったデザインをWebブラウザ上から簡単に確認できるツールです。今年の7月7日に&lt;a href=&#34;https://twitter.com/zeplin_io/status/618224626238291970&#34;&gt;1.0がリリース&lt;/a&gt;され、&lt;a href=&#34;https://www.youtube.com/watch?v=o9kOpAaDpQU&#34;&gt;画像出力機能&lt;/a&gt;が（やっと）追加されました。これで今まで手間であったデザイナーとエンジニアのデザインの受け渡しが自動で出来るようになりました。ちなみにfreeeでは$25/月のGrowingBusinessプランを買っています。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://taninno.github.io/images/zeplin/01.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>スタートアップでの意思決定を含めたUI設計プロセス</title>
+      <link>https://taninno.github.io/post/2015-05-04-start-up-ui-process/</link>
+      <pubDate>Mon, 04 May 2015 01:40:58 +0900</pubDate>
+      
+      <guid>https://taninno.github.io/post/2015-05-04-start-up-ui-process/</guid>
+      <description>&lt;p&gt;以前に書いた「&lt;a href=&#34;../2013-05-16-my-ux-design-approach&#34;&gt;問題解決型UXデザインアプローチ&lt;/a&gt;」はクライアントワークなどの受諾を想定したプロセスでした。それとは違い&lt;a href=&#34;http://freee.co.jp&#34;&gt;freee&lt;/a&gt;のようなエンジニアが爆速で実装をしている中でのUI設計のプロセスをまとめたいと思います。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>シナリオに対するエンジニアとの共通理解</title>
+      <link>https://taninno.github.io/post/2014-08-31-plot-based-on-sequence-diagram/</link>
+      <pubDate>Sun, 31 Aug 2014 16:44:53 +0900</pubDate>
+      
+      <guid>https://taninno.github.io/post/2014-08-31-plot-based-on-sequence-diagram/</guid>
+      <description>&lt;p&gt;スタートアップに適したUI設計を試している中で、ペルソナ・シナリオ法を参考にエンジニアと協業しやすいシナリオ設計を記載しています。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>家計簿アプリCart</title>
+      <link>https://taninno.github.io/post/2014-06-14-cart/</link>
+      <pubDate>Sat, 14 Jun 2014 22:27:00 +0900</pubDate>
+      
+      <guid>https://taninno.github.io/post/2014-06-14-cart/</guid>
+      <description>&lt;p&gt;写真で記録する新しい家計簿iOSアプリを自作しました&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ユーザビリティテストのタスクシート</title>
+      <link>https://taninno.github.io/post/2014-02-01-usability-testing-template/</link>
+      <pubDate>Sat, 01 Feb 2014 20:10:16 +0900</pubDate>
+      
+      <guid>https://taninno.github.io/post/2014-02-01-usability-testing-template/</guid>
+      <description>&lt;p&gt;ユーザビリティテストの進行やユーザーの行動などを記録するタスクシート（プロトコルのようなメモや議事録の雛形）を作成しました。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hart</title>
+      <link>https://taninno.github.io/post/2013-02-18-hart/</link>
+      <pubDate>Mon, 18 Feb 2013 01:32:00 +0900</pubDate>
+      
+      <guid>https://taninno.github.io/post/2013-02-18-hart/</guid>
+      <description>新しい読書メモツールを作りました。 本を読んでいると、新しい発見に出会うことがあります。そこには知らなかったことや考え方が変わるきっかけ、又はなんとなく思っていたことが言葉になっていることで共感したりします。他にもたくさんの驚きと発見、共感が本にはたくさんあると思います。
+Hartはそれらを記していくためのツールです。これまでもたくさんの読書サービスがありましたが、それらはどれも発見を本という単位で捉えるものでした。けれど発見は読み終えた時に生まれるものではなく、読んでいる時に感じるのだと考えます。そこでHartはページ単位のメモを用意しました。読んでいる時に残したい言葉をその場でそのページでHartに書き残していきます。それを１冊の本を読み終えるまで続けるとHartのあなたの本棚にはじぶんにとって大切な言葉が引用集のようにたくさん集まっています。それらを読み返してみると読書ノートのように当時の記憶が蘇ってきます。さらにメモに付随したページ数から簡単にもう一度読み返してみたりするなど、本を読み終えた後の体験がより楽しいものになります。
+Hartは個人的な利用のために作ったもので荒削りなところがありますが、自由にご利用できます。もし宜しければ使ってみてください。Hartのコンテンツは自分自身で作っていくため、実際に使っていくことでその楽しさや便利さが感じられるようになります。そしてもしご興味をもっていただけたら一緒に開発して頂ける方をお待ちしております。
+Hart</description>
+    </item>
+    
+    <item>
+      <title>Railsのscaffoldコマンド生成ツール</title>
+      <link>https://taninno.github.io/post/2013-01-17-rails-command/</link>
+      <pubDate>Thu, 17 Jan 2013 16:18:00 +0900</pubDate>
+      
+      <guid>https://taninno.github.io/post/2013-01-17-rails-command/</guid>
+      <description>&lt;p&gt;Scaffoldなどで型の打ち間違えを無くしたいので作りました。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>jenkinsでgit管理のWindowsPhoneをビルドする</title>
+      <link>https://taninno.github.io/post/2012-08-15-windowsphone-on-jenkins/</link>
+      <pubDate>Wed, 15 Aug 2012 22:43:00 +0000</pubDate>
+      
+      <guid>https://taninno.github.io/post/2012-08-15-windowsphone-on-jenkins/</guid>
+      <description>&lt;p&gt;メモです。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>開発環境について</title>
+      <link>https://taninno.github.io/post/2012-08-11-current-environment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://taninno.github.io/post/2012-08-11-current-environment/</guid>
+      <description>&lt;p&gt;メモです。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
