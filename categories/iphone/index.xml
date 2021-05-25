@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iPhone on taninnosorani blog</title>
+    <link>https://taninno.github.io/categories/iphone/</link>
+    <description>Recent content in iPhone on taninnosorani blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 14 Jun 2014 22:27:00 +0900</lastBuildDate><atom:link href="https://taninno.github.io/categories/iphone/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>家計簿アプリCart</title>
+      <link>https://taninno.github.io/post/2014-06-14-cart/</link>
+      <pubDate>Sat, 14 Jun 2014 22:27:00 +0900</pubDate>
+      
+      <guid>https://taninno.github.io/post/2014-06-14-cart/</guid>
+      <description>&lt;p&gt;写真で記録する新しい家計簿iOSアプリを自作しました&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

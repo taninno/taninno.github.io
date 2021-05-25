@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      シナリオに対するエンジニアとの共通理解 - taninnosorani blog
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           taninnosorani blog
+				
+			</a>
+		</h1>
+		<h2 class="blog-description">What is the UX Workflow?</h2>
+	</div>
+
+	<div class="nav">
+    
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      
+      <h2 class="post-title">シナリオに対するエンジニアとの共通理解</h2>
+      <section class="post-meta">
+        <time class="post-date">2014-08-31</time>
+      </section>
+    </header>
+    <section class="post-content">
+      <p>スタートアップに適したUI設計を試している中で、ペルソナ・シナリオ法を参考にエンジニアと協業しやすいシナリオ設計を記載しています。</p>
+<h2 id="シナリオを使ったサービスの設計">シナリオを使ったサービスの設計</h2>
+<p>UIを作る時に最初にPhotoshopで作り始めると手戻りが大変なので、その前にワイヤーフレーム（下書き）を描きますが、それでもワイヤーフレームを何枚も描くのは大変ので、精度を上げるためにユーザーの行動を文章で定義します。文章なら書き直しがあってもワイヤーフレームより楽です。<strong>さらにシナリオは具体的な画面要素には触れないので、ユーザビリティテストの手順書としても最適です</strong>。なのでシナリオを作っとくと後々楽になります。逆にシナリオを作らないとUIデザインの時に具体的な利用シーンが想像できず、誰が何のために操作するサービスなのかブレてしまう可能性があります。</p>
+<h2 id="シナリオの下書きとしてのプロット">シナリオの下書きとしてのプロット</h2>
+<p>ここでのシナリオは小説や台本のようなものを指します。そして、その小説には構想を練るための下書きとなるプロットが必要です。UIデザインをする上でこのプロットが重要だと思います。<strong>プロットはサービスに対するユーザーの時間軸上の行動や推測される発言内容を考えていき、そのために必要な機能や予想される不具合をまとめたものです</strong>。UIデザインの際にこの表があると、UIのバランスがブレないくなります。特に複数の画面に跨る場合は画面間の文脈が重要となるためにこの資料は必須です。時間が無い時はプロットだけを作成してシナリオを作らないこともありますが、プロットだけは必ず作るようにしています。</p>
+<p><img src="/images/post/plot.png" alt=""></p>
+<p>左から「タスクNo.」「タスク名」「ユーザーの行動」「ユーザーが思ったこと」「タスクを完了するのに必要な機能」「備考（予想される不具合）」を記載します。</p>
+<p>上記の表は「ブループリント」や狭義の「カスタマージャーニーマップ（UXマップ）」と同じ役割かもしれませんが、ブループリントよりもサービス全体を網羅せず簡略化させ、ジャーニーマップと比較すると感情曲線は無くし、メインシナリオ+イレギュラーシナリオを含むイメージです。あくまでイメージですが、自分なりに必要最小限に絞ったものをプロットとしています。</p>
+<h2 id="問題はプロット作りには時間が掛かること">問題はプロット作りには時間が掛かること</h2>
+<p>プロットがあることでユースケースが整理されUIが考えやすくなりますが、プロットを作るだけでもそれなりに時間がかかります。多くのUXデザイナーがいればいいですが、スタートアップなど人手が足りない時にはプロットの作成が怠りがちになります。私も忙しいときには楽をしていきなりPhotoshopでデザイン画を起こそうとしてしまいますが、大抵その後ユーザーがどういう気持でこの画面に訪れてきているのか分からなくなります。</p>
+<h2 id="エンジニア自身がプロットを作成する">エンジニア自身がプロットを作成する</h2>
+<p>そこで、プロットの作成をエンジニアの方にお願いするようにします（忙しいエンジニアの方にとっては面倒かもしれませんが）。ただいきなりプロットを依頼しても手間となってしまうため、<strong>エンジニアが慣れ親しんでいるユースケース図のオブジェクトをユーザーに置き換えて考えてもらいます</strong>。</p>
+<p><img src="/images/post/sequence.png" alt=""></p>
+<p>縦のオブジェクトにはユーザー（ペルソナ）を当てます。ユーザーが複数ならオブジェクトを追加してもらいます。又、オブジェクトにはPCやモバイルなどのプラットフォームも用意します。それらのオブジェクトに対する操作やプッシュなどはシーケンス図のメッセージとして記載します。これによってプロットに記載する「タスクNo.」「タスク名」「ユーザーの行動」「タスクを完了するのに必要な機能」がユースケース図で置き換えられます。残りの「ユーザーが思ったこと」「備考（予想される不具合）」は考えなければなりませんが、既に時間軸上でユーザーの行動が記載されていれば作業時間を短くできます。</p>
+<h2 id="最初は一緒に書きましょう">最初は一緒に書きましょう</h2>
+<p>シーケンス図によってプロットの作成が置き換えられたといっても「タスクを完了するのに必要な機能」自体が最適どうかはわかりません。ここはプロットの中でも特に何度も想像を繰り返す大変な項目欄ですが、ここをエンジニアの方と一緒に考えることで同じゴールを向いて作業できるようになり、エンジニアとの協業が後々楽になります。エンジニアとUIを誤認したまま進むよりは「タスクを完了するのに必要な機能」を具体的でなくても、どうなったらユーザーが喜ぶかを話し合っておくことが大切だと思います。何より炎上するような案件は大体ここが疎かになっていることが多いと思います。</p>
+<h2 id="いずれはuxデザイナーがいなくても">いずれはUXデザイナーがいなくても</h2>
+<p>ユースケース図をエンジニアとUXデザイナーの共通言語にすることでゴールへの認識齟齬を防ぎ、エンジニアのUXセンスも高まっていきます。最初は共同で作成することが必要かと思いますが、エンジニアが慣れてきたらUXデザイナーが参加せずともシナリオが作成できるようになり、あとはUIデザイナーへ機能項目を伝えるだけで開発フローが完結します。これにより個々のプロットの作成が負担となっていたUXデザイナーがよりリサーチやアイディア、コンセプトに方にも注力できるようになります。エンジニアにとってはUX→UI→開発を一貫して行えるようになるようになります。</p>
+    </section>
+    <footer class="post-footer">
+      
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  
+  <section class="facebook"><a class="icon-facebook" href="https://www.facebook.com/https://www.facebook.com/yamada.kousuke"> https://www.facebook.com/yamada.kousuke</a></section>
+  <section class="copyright">&copy; 2021 taninnosorani blog</section>
+  <section class="poweredby"><a href="https://github.com/nirocfz/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+    </body>
+</html>

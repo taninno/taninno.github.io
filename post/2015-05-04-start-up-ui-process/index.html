@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      スタートアップでの意思決定を含めたUI設計プロセス - taninnosorani blog
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           taninnosorani blog
+				
+			</a>
+		</h1>
+		<h2 class="blog-description">What is the UX Workflow?</h2>
+	</div>
+
+	<div class="nav">
+    
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      
+      <h2 class="post-title">スタートアップでの意思決定を含めたUI設計プロセス</h2>
+      <section class="post-meta">
+        <time class="post-date">2015-05-04</time>
+      </section>
+    </header>
+    <section class="post-content">
+      <p>以前に書いた「<a href="../2013-05-16-my-ux-design-approach">問題解決型UXデザインアプローチ</a>」はクライアントワークなどの受諾を想定したプロセスでした。それとは違い<a href="http://freee.co.jp">freee</a>のようなエンジニアが爆速で実装をしている中でのUI設計のプロセスをまとめたいと思います。</p>
+<h2 id="昔のプロセス">昔のプロセス</h2>
+<p><img src="/images/post/ux.png" alt=""></p>
+<ol>
+<li>理解</li>
+<li>アイディア</li>
+<li>ストーリー</li>
+<li>UI</li>
+<li>ビジュアルデザイン</li>
+<li>開発</li>
+<li>フィードバック</li>
+</ol>
+<h2 id="現在">現在</h2>
+<p><img src="/images/process/01.png" alt=""></p>
+<h3 id="コミュニケーション用資料の削減">コミュニケーション用資料の削減</h3>
+<p>昔と大きく変わったのは3.ストーリーと4.UIのプロセスをほとんど簡略したことです。3.はアイディアの共有が目的で、4.は画面の共有が目的でした。どちらも関係者とのコミュニケーションのためのプロセスですが、**今は関係者が自分を含めて2人だけの少数の場合が多く、以前のような会ったことのない別会社の関係者への意思疎通の為の作業は必要無くなりました。**ただ、もちろんスタートアップはスケールアップするため、この方法がいつまで出来るかわかりません。100人規模では成立していますが、どこかで「思いがそれぞれ違う人の方向性を合わせるコンセプト資料」と「自分が直接説明できない伝言ゲーム用の詳細画面設計書」が必要になるかもしれません。今は考えが似ていて直接説明できるチーム規模だからこそ、先の3.と4.のプロセスを減らすことができました。</p>
+<h2 id="新しいプロセス">新しいプロセス</h2>
+<p>コミュニケーション資料が減ったからといっても、１つ１つのTaskのゴールがなにで、どこまでやるのか、といった共通認識は重要です。むしろ気付いたら実装が終わっているほど実装サイクルが早いスタートアップでは、むしろ最初のkickoffでの舵取りがプロジェクトを左右します。</p>
+<h3 id="プラン">プラン</h3>
+<p>最初に課題を見つけたり、もっと改善できそうなところがあるとまずはプラン（提案書）を作ります。提案書と言ってもWord１ページ分の簡単な文章です。口頭で言うと**「こんな課題があり、原因はこれで、策としてXXXを考えていて、効果としては◯◯◯を見込んでいる」**といった簡単なものです。ただ課題として挙げられた箇所は本当にそうなのかという裏付けは必要です。それらは事前に定量的な仮設を集めます（時には数字を出さなくても明確に改善が必要だと判断することもありますが）。</p>
+<h3 id="プラニング">プラニング</h3>
+<p>上記のプランをチームに披露します。プロジェクト規模が大きればリードレベルやデータアナリストの人達にも声を掛けます。**この場では方向性は合っているか、スコープは広げすぎてないか、逆に漏れはないか、効果はありそうかなど意見をもらいます。**そして懸念事項が上がり、大きくは問題が無いとなったならば振り返り日を決めて、その日にKPIなどの指標の達成度合いを確認します。このような場をプラニングと言っていますが、プロジェクトがスタートするので一般的にはキックオフに近いかもしれません（ちなみにそれほど用語には意味は無く、プラニングが最初のMTG,キックオフが２回目のMTGという程度に考えています）。ただ、UIチームは披露するアウトプットが異なります。プラニングではコンセプトの共有、キックオフではモックアップの共有にフォーカスします。</p>
+<h3 id="ラフスケッチとモックアップ">ラフスケッチとモックアップ</h3>
+<p>プラニングで方向性が定まったらUIらしい作業に入ります。ここではワイヤフレームは作らずラフスケッチとモックアップを作成します。なぜワイヤフレームを作らないかは<a href="../2013-09-12-justinmind-prototyper">Prototyperを使ったモックアップ主導のUI設計プロセス</a>を参照ください。スケッチからモックアップへの流れは変わっていません。</p>
+<h3 id="キックオフ">キックオフ</h3>
+<p>プラニングが終わったら、次回のMTGでは初めて関係者全員（といっても数人程度）が集まります。**この段階では最初のモックアップが荒くても出来上がってるようにします。**議論のたたき台としてある程度が形になっていたほうが議論もしやすく、関係ない話に発展することも無くなります。もちろん全く別物になることも有りますが、触れる画面が何も無いと頭で想像して議論することになり、そうなると大抵結論がでませんし、この段階ではどうでもいい細かい所の話（イレギュラーケースなど）になりがちです。それを防ぐためにたたき台が必要です。さらに複数案あると尚いいです。</p>
+<h3 id="振り返り">振り返り</h3>
+<p>ここではプラニングの時に決めていた指標が達成されているかどうかを振り返ります。その他にも気付いたことを話し合い、次のイテレーションのためのヒアリングを行います。</p>
+<h2 id="推測よりも測定">推測よりも測定</h2>
+<p>以前の受諾向けのUXプロセスでは調査フェイズだけで長いもので数ヶ月の時間がありました。プロジェクトも組織の規模も大きからこそ初期検討が重要でした。それがスタートアップのような環境では仮説検証にそれほど時間は掛けず、**実際にリリースして結果を測定することを大切にしています。**必要なのか悩んだらとりあえずやってみて改善したら良し、ダメだったら次の施策に活かせば良い。コストを掛けずにABテストが短いイテレーションで実施できる社内事業だからこそで、UI設計に外部の受諾コンサルがいると気軽に試してみるというのがやや難しくなります。ただ、これは規模が大きかった受諾の場合とどっちが良いかという話ではなく、時間も人も足りないが、失敗は比較的許されるスタートアップの事情もあります。</p>
+<h2 id="参考デザインツール">参考:デザインツール</h2>
+<p>少ない時間と詳細な画面設計書を作らない代わりに画面の共有を常に行っています。そのために以下のようなモックアップ・プロトタイピングツールを使っています。</p>
+<h3 id="justinmind-wwwjustinmindcomhttpwwwjustinmindcom">Justinmind (<a href="http://www.justinmind.com">www.justinmind.com</a>)</h3>
+<p><img src="/images/process/justinmind.png" alt=""><br>
+prototyperから社名でもあるJustinmindになりました。Justinmindは多機能系のモックアップ（プロトタイピング）ツールです。主にモックアップ作成に用いています。最近ちょっと挙動が重いので、<a href="http://www.weld.io">weld.</a>に移行しようかと思っています。</p>
+<h3 id="sketch3-bohemiancodingcomhttpbohemiancodingcom">Sketch3 (<a href="http://bohemiancoding.com/">bohemiancoding.com</a>)</h3>
+<p><img src="/images/process/sketch.png" alt=""><br>
+UIパーツのほとんど共通のものを使うのでモックアップが終わると実装に入ることもありますが、時には新しいレイアウト・パーツが必要となることがあるので、ドローイングツールのSketchを使ってデザイン画をおこします。Photoshopより便利ですし、後述するzeplinとの連携のためにもsketchを使っています。</p>
+<h3 id="invision-wwwinvisionappcomhttpwwwinvisionappcom">inVision (<a href="http://www.invisionapp.com">www.invisionapp.com</a>)</h3>
+<p><img src="/images/process/inVision.png" alt=""><br>
+Justinmindでモックアップは作っていましたが、その後Sketchでデザインを描いているとモックアップが古くなってしまうので、画像ファイルからモックアップを作れるinVisionを使います。最近ではProttなどのツールも検討しています。</p>
+<h3 id="zeplin-zepliniohttpzeplinio">zeplin (<a href="http://zeplin.io">zeplin.io</a>)</h3>
+<p><img src="/images/process/zeplin.png" alt=""><br>
+エンジニアにデザインを渡すときにSketch上でサイズやカラーコードを生成できる<a href="https://medium.com/sketch-tricks/sketch-measure-master-a-thorough-walkthrough-57d3df25a1cf">Sketch Measure</a>を使ったりしますが、画面の量が多いといくら自動とはいえ、パーツを指定するのは手作業なので少し大変です。そこでsketchのレイアウト情報をWeb上に表示できるzeplinを使用します。これでエンジニアにはURLだけ渡しとけば、後はブラウザ上からmargin値やfont-size、文章もコピペできるようになります。出来れば画像ファイルもzeplinから出力できればいいのですが、次のメジャーアップデートで対応してくれるそうです。</p>
+<h3 id="weld-weldiohttpwwwweldio">weld (<a href="http://www.weld.io">weld.io</a>)</h3>
+<p><img src="/images/process/weld.png" alt=""><br>
+モックアップにはjustinmindを使っていますが、weldがシンプルで使いやすそうなので検討しています。justinmindは多機能なのは良いのですが、その分使い勝手や動作が犠牲になっているので、気軽に使えるモックアップツールとしてweldに期待しています。</p>
+    </section>
+    <footer class="post-footer">
+      
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  
+  <section class="facebook"><a class="icon-facebook" href="https://www.facebook.com/https://www.facebook.com/yamada.kousuke"> https://www.facebook.com/yamada.kousuke</a></section>
+  <section class="copyright">&copy; 2021 taninnosorani blog</section>
+  <section class="poweredby"><a href="https://github.com/nirocfz/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+    </body>
+</html>

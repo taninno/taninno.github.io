@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>
+      
+      jenkinsでgit管理のWindowsPhoneをビルドする - taninnosorani blog
+      
+		</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato:100,100i,300,300i,400,400i,700,700i|Source+Code+Pro:300,400,500,700" rel="stylesheet">
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/bigfoot/dist/bigfoot.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/bigfoot/dist/bigfoot-number.css" />
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
+    
+    
+</head>
+
+    <body class="post-template">
+        <header class="main-header">
+	<div class="main-header-content">
+		<h1 class="blog-title">
+			<a href="/">
+				
+           taninnosorani blog
+				
+			</a>
+		</h1>
+		<h2 class="blog-description">What is the UX Workflow?</h2>
+	</div>
+
+	<div class="nav">
+    
+		
+	</div>
+</header>
+
+        
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      
+      <h2 class="post-title">jenkinsでgit管理のWindowsPhoneをビルドする</h2>
+      <section class="post-meta">
+        <time class="post-date">2012-08-15</time>
+      </section>
+    </header>
+    <section class="post-content">
+      <p>メモです。</p>
+<ol>
+<li><a href="http://jenkins-ci.org/">http://jenkins-ci.org/</a>でWindowsをインストール。</li>
+<li>gitやMSBuildなどのプラグインをインストールする。</li>
+<li>jenkinsのPath to Git executableには「C:\Program Files\Git\bin\git.exe」を入れる。MSBuildのPath to MSBuildには「C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe」。</li>
+<li>個々のジョブを作り設定で、Repository URLにローカルリポジトリだと.gitまでのフォルダパスを入れる。ブランチには今回はmasterを指定している。</li>
+<li>ビルドの指定には登録したMSBuildを選択して.slnファイルへの相対パスを指定する。コマンドラインオプションには「/p:Configuration=Release /t:Clean,Build」を入れる。</li>
+</ol>
+<h3 id="参考url">参考URL</h3>
+<ol>
+<li><a href="http://tech-old.hilife-jp.info/2011/12/silverlight-unittestjenkins.html">http://tech-old.hilife-jp.info/2011/12/silverlight-unittestjenkins.html</a></li>
+<li><a href="http://kiita-it-blog.seesaa.net/article/249556782.html">http://kiita-it-blog.seesaa.net/article/249556782.html</a></li>
+<li><a href="http://d.hatena.ne.jp/ch3cooh393/20120126/1327510696">http://d.hatena.ne.jp/ch3cooh393/20120126/1327510696</a></li>
+<li><a href="http://blog.gigei.jp/tech/000053.html">http://blog.gigei.jp/tech/000053.html</a></li>
+</ol>
+    </section>
+    <footer class="post-footer">
+      
+    </footer>
+  </article>
+</main>
+
+        <footer class="site-footer">
+  <section class="rss"><a class="subscribe-button icon-feed" href="/index.xml"></a></section>
+  
+  <section class="facebook"><a class="icon-facebook" href="https://www.facebook.com/https://www.facebook.com/yamada.kousuke"> https://www.facebook.com/yamada.kousuke</a></section>
+  <section class="copyright">&copy; 2021 taninnosorani blog</section>
+  <section class="poweredby"><a href="https://github.com/nirocfz/arabica">Arabica</a> theme by Sean Lunsford. Published with <a href="https://gohugo.io">Hugo</a>.</section>
+</footer>
+
+
+
+    </body>
+</html>
